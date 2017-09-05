@@ -1,0 +1,287 @@
+body {
+  font-family: arial; }
+
+#banner {
+  width: 100%;
+  height: 514px;
+  position: relative;
+  margin-bottom: 15px; }
+  #banner #slides li {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0; }
+  #banner #slides .fir {
+    z-index: 333;
+    background: url(../images/banner1.jpg) no-repeat center center; }
+  #banner #slides .sec {
+    z-index: 222;
+    background: url(../images/banner2.jpg) no-repeat center center; }
+  #banner #slides .thr {
+    z-index: 111;
+    background: url(../images/banner3.jpg) no-repeat center center; }
+  #banner .small {
+    position: absolute;
+    z-index: 666;
+    left: 50%;
+    margin-left: 300px;
+    top: 312px; }
+    #banner .small li {
+      float: left; }
+      #banner .small li a {
+        margin: 0 2px;
+        display: inline-block;
+        width: 24px;
+        height: 6px;
+        background: rgba(153, 153, 153, 0.6); }
+      #banner .small li .act {
+        background: #DE1838; }
+  #banner .markets {
+    position: absolute;
+    width: 790px;
+    height: 178px;
+    z-index: 334;
+    left: 50%;
+    margin-left: -395px;
+    top: 336px; }
+    #banner .markets a {
+      float: left;
+      display: block;
+      width: 262px;
+      height: 178px; }
+  #banner .rightBar {
+    position: absolute;
+    left: 50%;
+    margin-left: 394px;
+    background: rgba(0, 0, 0, 0.1);
+    z-index: 334;
+    width: 210px;
+    height: 514px;
+    padding: 0 1px; }
+    #banner .rightBar .barT {
+      width: 210px;
+      height: 328px;
+      background: rgba(255, 255, 255, 0.8); }
+      #banner .rightBar .barT .pattern {
+        font-size: 12px;
+        height: 38px;
+        line-height: 38px;
+        text-indent: 18px;
+        color: #333;
+        border-bottom: 1px solid #c7c7c7; }
+      #banner .rightBar .barT .allLi {
+        margin: 12px 0 0 18px; }
+        #banner .rightBar .barT .allLi li i {
+          margin-right: 6px;
+          display: inline-block;
+          width: 16px;
+          height: 18px;
+          background: #DE1838;
+          text-align: center;
+          line-height: 18px;
+          color: #fff; }
+        #banner .rightBar .barT .allLi li:first-child {
+          height: 30px; }
+        #banner .rightBar .barT .allLi li:nth-child(2) {
+          height: 90px; }
+          #banner .rightBar .barT .allLi li:nth-child(2) p {
+            margin-left: 25px;
+            height: 28px;
+            line-height: 28px;
+            color: #666; }
+          #banner .rightBar .barT .allLi li:nth-child(2) .number {
+            font-size: 18px;
+            color: #DE1838; }
+        #banner .rightBar .barT .allLi li:nth-child(3) {
+          height: 98px; }
+          #banner .rightBar .barT .allLi li:nth-child(3) p {
+            margin-top: 6px; }
+            #banner .rightBar .barT .allLi li:nth-child(3) p span {
+              vertical-align: top;
+              margin-left: 25px;
+              color: #666; }
+            #banner .rightBar .barT .allLi li:nth-child(3) p img {
+              margin-left: 32px;
+              display: inline-block;
+              width: 68px;
+              height: 68px; }
+        #banner .rightBar .barT .allLi li:last-child {
+          margin-top: 5px;
+          height: 30px; }
+    #banner .rightBar .barB {
+      position: relative;
+      background: #fff;
+      width: 210px;
+      height: 185px;
+      border-bottom: 1px solid #e7e7e7; }
+      #banner .rightBar .barB .ad {
+        height: 31px; }
+        #banner .rightBar .barB .ad li {
+          cursor: pointer;
+          float: left;
+          width: 104px;
+          height: 31px;
+          text-align: center;
+          line-height: 31px; }
+        #banner .rightBar .barB .ad .actt {
+          border: 1px solid #e8e8e8;
+          background: #f1f1f1; }
+      #banner .rightBar .barB .emporium {
+        position: absolute;
+        top: 31px;
+        left: 0;
+        display: block; }
+        #banner .rightBar .barB .emporium p {
+          width: 165px;
+          height: 60px;
+          background: orange;
+          text-align: center;
+          margin: 30px 0 0 20px;
+          border-radius: 2px; }
+          #banner .rightBar .barB .emporium p a {
+            color: #fff; }
+            #banner .rightBar .barB .emporium p a:first-child b {
+              font-size: 16px;
+              height: 35px;
+              line-height: 35px; }
+            #banner .rightBar .barB .emporium p a:first-child i {
+              font-size: 12px; }
+        #banner .rightBar .barB .emporium .logn {
+          display: block;
+          height: 60px;
+          line-height: 60px;
+          text-align: center;
+          font-size: 12px;
+          color: #999; }
+      #banner .rightBar .barB .poster {
+        position: absolute;
+        top: 31px;
+        left: 0;
+        display: none; }
+        #banner .rightBar .barB .poster ul {
+          padding: 10px 0; }
+          #banner .rightBar .barB .poster ul li {
+            height: 28px;
+            line-height: 28px;
+            margin-left: 15px; }
+            #banner .rightBar .barB .poster ul li i {
+              margin-right: 5px;
+              display: inline-block;
+              width: 2px;
+              height: 2px;
+              background: #C7C7C7;
+              vertical-align: middle; }
+
+#wine {
+  height: 360px;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 15px; }
+  #wine .wineT .tab-item {
+    float: left;
+    width: 90px;
+    height: 43px;
+    line-height: 43px;
+    text-align: center;
+    margin-right: 10px;
+    font-size: 16px;
+    cursor: pointer; }
+  #wine .wineC {
+    position: absolute;
+    width: 90px;
+    height: 7px;
+    border-bottom: 2px solid #E31939;
+    top: 35px;
+    left: 0;
+    overflow: hidden; }
+    #wine .wineC b {
+      border-width: 10px;
+      border-style: dashed dashed solid;
+      border-color: transparent transparent #dd102e;
+      display: inline-block;
+      font-size: 0;
+      height: 0;
+      width: 0;
+      margin-top: -12px;
+      margin-left: 34px; }
+  #wine .wineB {
+    height: 310px;
+    border: 1px solid #E7E7E7; }
+    #wine .wineB .kind {
+      display: none;
+      width: 1170px;
+      margin: 18px; }
+      #wine .wineB .kind ul li {
+        text-align: center;
+        float: left;
+        width: 180px;
+        height: 80px;
+        margin: 0 17px 17px 0;
+        overflow: hidden; }
+        #wine .wineB .kind ul li a {
+          display: block;
+          width: 180px;
+          height: 80px; }
+        #wine .wineB .kind ul li img {
+          display: block; }
+        #wine .wineB .kind ul li:nth-child(6n) {
+          margin-right: 0; }
+    #wine .wineB .reveal {
+      display: block; }
+
+#hotShop {
+  margin-bottom: 15px;
+  margin-top: 35px; }
+  #hotShop .hot {
+    display: inline-block;
+    width: 200px;
+    height: 20px;
+    line-height: 20px;
+    background: url(../images/user_header.png) no-repeat; }
+  #hotShop .shop {
+    float: right;
+    height: 20px;
+    line-height: 20px; }
+  #hotShop .content {
+    background: #f1f1f1;
+    margin-top: 10px;
+    height: 330px; }
+    #hotShop .content .contentL {
+      float: left;
+      width: 212px;
+      height: 326px;
+      border-top: 2px solid #E7E7E7;
+      border-bottom: 2px solid #E7E7E7;
+      border-right: 2px solid #e7e7e7; }
+    #hotShop .content .contentC {
+      border: 1px solid #e7e7e7;
+      position: relative;
+      float: left;
+      width: 780px;
+      height: 326px; }
+      #hotShop .content .contentC li {
+        border: 1px solid #E7E7E7;
+        float: left; }
+        #hotShop .content .contentC li .brand {
+          display: block;
+          width: 128px;
+          height: 80px;
+          position: relative;
+          transition: height .3s ease;
+          text-align: center;
+          background: #fff; }
+          #hotShop .content .contentC li .brand img {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto; }
+    #hotShop .content .contentR {
+      border-left: 1px solid #e7e7e7;
+      width: 212px;
+      height: 326px;
+      float: right; }
+
+/*# sourceMappingURL=index.css.map */

@@ -1,6 +1,4 @@
-@charset "UTF-8";
 #header #headerTop {
-  font-family: "微软雅黑";
   background: #f2f2f2;
   font-family: arial;
   height: 32px;
@@ -318,9 +316,19 @@
       border: 1px solid #e7e7e7;
       border-top: none;
       background: #fff;
-      top: 40px; }
+      top: 39px;
+      opacity: .8;
+      z-index: 666; }
+      #header #navA .list #carList #allList {
+        width: 208px; }
       #header #navA .list #carList li {
+        position: static;
+        z-index: 666;
+        width: 208px;
+        height: 64px;
         cursor: pointer; }
+        #header #navA .list #carList li:hover .mum .p1 {
+          background: url(../images/icohover.png) no-repeat; }
       #header #navA .list #carList .mum {
         height: 63px;
         margin: 0 15px;
@@ -353,6 +361,60 @@
           background-position: 0 -168px; }
       #header #navA .list #carList .lat {
         border: none; }
+      #header #navA .list #carList #showList {
+        background: #fff;
+        border: solid 1px #DE1838;
+        box-shadow: 1px 1px 8px #dfdfdf;
+        display: block;
+        left: 208px;
+        position: absolute;
+        top: 0;
+        width: 787px;
+        z-index: 11; }
+        #header #navA .list #carList #showList .showL {
+          width: 535px;
+          float: left;
+          margin-left: 15px;
+          font-size: 12px; }
+          #header #navA .list #carList #showList .showL .list1 {
+            padding: 15px 0;
+            border-bottom: 1px dashed #CECECE; }
+            #header #navA .list #carList #showList .showL .list1:last-child {
+              border: none; }
+          #header #navA .list #carList #showList .showL .cat {
+            float: left;
+            height: 28px;
+            line-height: 28px; }
+            #header #navA .list #carList #showList .showL .cat a {
+              color: #222;
+              font-size: 14px; }
+          #header #navA .list #carList #showList .showL .list {
+            float: left;
+            width: 428px;
+            margin-left: 20px; }
+            #header #navA .list #carList #showList .showL .list a {
+              display: inline-block;
+              width: 100px;
+              height: 28px;
+              line-height: 28px; }
+        #header #navA .list #carList #showList .showR {
+          width: 194px;
+          float: right;
+          font-size: 12px;
+          margin-right: 15px; }
+          #header #navA .list #carList #showList .showR h3 {
+            margin-top: 13px;
+            font-weight: 300;
+            color: #e31939;
+            height: 45px;
+            line-height: 45px;
+            border-bottom: 1px dashed #CECECE; }
+          #header #navA .list #carList #showList .showR .store {
+            padding: 10px 0; }
+            #header #navA .list #carList #showList .showR .store li {
+              width: 97px;
+              height: 20px;
+              float: left; }
   #header #navA .navAr {
     height: 36px;
     float: left;
@@ -367,5 +429,107 @@
         font-size: 16px; }
         #header #navA .navAr li a:hover {
           color: #e31939; }
+
+#footer {
+  margin-top: 20px;
+  position: relative;
+  font-size: 14px;
+  background: #fafafa; }
+  #footer #footer-server ul {
+    padding: 25px 0;
+    border-bottom: 1px solid #CECECE; }
+    #footer #footer-server ul li {
+      float: left;
+      width: 20%;
+      line-height: 35px; }
+      #footer #footer-server ul li a {
+        padding-left: 65px; }
+      #footer #footer-server ul li:nth-child(1) a {
+        display: block;
+        color: #333;
+        background: url(../images/footer-icon.png) no-repeat 0 0;
+        height: 35px; }
+      #footer #footer-server ul li:nth-child(2) a {
+        display: block;
+        color: #333;
+        background: url(../images/footer-icon.png) no-repeat -243px 0;
+        height: 35px; }
+      #footer #footer-server ul li:nth-child(3) a {
+        display: block;
+        color: #333;
+        background: url(../images/footer-icon.png) no-repeat -489px 0;
+        height: 35px; }
+      #footer #footer-server ul li:nth-child(4) a {
+        display: block;
+        color: #333;
+        background: url(../images/footer-icon.png) no-repeat -737px 0;
+        height: 35px; }
+      #footer #footer-server ul li:nth-child(5) a {
+        display: block;
+        color: #333;
+        background: url(../images/footer-icon.png) no-repeat -984px 0;
+        height: 35px; }
+  #footer #footer-links {
+    border-bottom: 1px solid #CECECE; }
+    #footer #footer-links dl {
+      margin: 15px 0 20px 0;
+      float: left;
+      border-right: 1px solid #CECECE; }
+      #footer #footer-links dl dt {
+        height: 30px;
+        line-height: 30px;
+        padding: 0 60px;
+        font-size: 16px; }
+      #footer #footer-links dl dd {
+        padding: 0 65px; }
+        #footer #footer-links dl dd a {
+          display: block;
+          height: 26px;
+          line-height: 26px;
+          font-size: 12px; }
+          #footer #footer-links dl dd a:hover {
+            color: #e31939;
+            text-decoration: underline; }
+    #footer #footer-links .phone .pho {
+      padding-top: 10px;
+      height: 35px;
+      line-height: 35px;
+      font-size: 26px;
+      color: #f00;
+      text-align: center; }
+    #footer #footer-links .phone .onel {
+      text-align: center;
+      line-height: 25px;
+      font-size: 12px; }
+    #footer #footer-links .phone a {
+      display: inline-block;
+      width: 120px;
+      height: 30px;
+      background: #E31939;
+      opacity: .8;
+      text-align: center;
+      line-height: 30px;
+      color: #fff;
+      font-size: 12px;
+      margin: 15px 0  0 82px; }
+      #footer #footer-links .phone a:hover {
+        opacity: 1; }
+  #footer #footer-info {
+    margin: 10px 0 5px 0;
+    text-align: center;
+    color: #666; }
+    #footer #footer-info p {
+      height: 22px;
+      line-height: 22px; }
+      #footer #footer-info p a {
+        display: inline-block;
+        height: 22px;
+        line-height: 22px;
+        text-align: center;
+        padding-right: 10px;
+        font-size: 12px; }
+      #footer #footer-info p span {
+        font-size: 12px;
+        color: #666; }
 
 /*# sourceMappingURL=common.css.map */
