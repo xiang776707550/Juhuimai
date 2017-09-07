@@ -1,5 +1,5 @@
 $(function(){
-
+	
 	$("#header-warp").load("http://127.0.0.1/Juhuimai/common.html #header",function(){
 		$(".nav-r #me").hover(function(){
 			$(".info").fadeIn(10);
@@ -118,11 +118,23 @@ $(function(){
 			$(this).find("a").addClass("act").end().siblings().find("a").removeClass("act");
 		})
 		
-		$("#carList").show();
+		$("#carList").hide();
 		$("#showList").hide();
 		
 	});
-	$("#footer-warp").load("http://127.0.0.1/Juhuimai/common.html #footer");
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	

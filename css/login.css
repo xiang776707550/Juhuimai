@@ -1,0 +1,162 @@
+#main {
+  width: 990px;
+  margin: 0 auto;
+  font-family: arial; }
+  #main .mainT {
+    height: 100px; }
+    #main .mainT .logo {
+      float: left; }
+    #main .mainT .title {
+      width: 200px;
+      height: 44px;
+      font-size: 28px;
+      line-height: 44px;
+      float: left;
+      padding: 0 15px;
+      margin: 26px 0 0 16px;
+      font-weight: 700;
+      border-left: 1px solid #e7e7e7; }
+    #main .mainT .weibo {
+      float: right; }
+      #main .mainT .weibo ul {
+        margin: 35px 0 0 20px; }
+        #main .mainT .weibo ul li {
+          float: left;
+          padding: 0 10px; }
+          #main .mainT .weibo ul li a {
+            display: block;
+            width: 24px;
+            height: 24px;
+            background: url(../images/login.png) no-repeat; }
+          #main .mainT .weibo ul li:first-child a {
+            background-position: -123px -10px; }
+          #main .mainT .weibo ul li:nth-child(2) a {
+            background-position: -64px -10px; }
+          #main .mainT .weibo ul li:last-child a {
+            background-position: -12px -10px; }
+  #main .mainB {
+    height: 442px;
+    margin: 10px 0 30px 0;
+    position: relative; }
+    #main .mainB .deliver {
+      float: left;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 605px;
+      height: 403px;
+      background: url(../images/loginPic.jpg) no-repeat; }
+    #main .mainB .fir {
+      float: right; }
+      #main .mainB .fir h2 {
+        font-weight: 300;
+        font-size: 12px;
+        height: 30px;
+        line-height: 30px; }
+        #main .mainB .fir h2 span {
+          margin-left: 255px; }
+        #main .mainB .fir h2 a {
+          color: #E31938; }
+          #main .mainB .fir h2 a:hover {
+            text-decoration: underline; }
+      #main .mainB .fir .form {
+        box-shadow: #ccc 0 0 5px;
+        width: 300px;
+        padding: 20px 40px;
+        border: 1px solid #E7E7E7;
+        min-height: 370px;
+        height: auto;
+        position: relative; }
+        #main .mainB .fir .form .item {
+          margin-bottom: 8px; }
+          #main .mainB .fir .form .item span {
+            font-size: 14px;
+            height: 30px;
+            line-height: 30px;
+            color: #666;
+            display: inline-block; }
+          #main .mainB .fir .form .item input {
+            width: 288px;
+            height: 16px;
+            font-size: 12px;
+            border: none;
+            border: 1px solid #ccc;
+            padding: 10px 5px 10px 5px;
+            outline: none; }
+        #main .mainB .fir .form .tishi {
+          position: absolute;
+          display: none; }
+          #main .mainB .fir .form .tishi span {
+            display: inline-block;
+            height: 35px;
+            line-height: 35px;
+            text-align: center;
+            color: #E12545; }
+        #main .mainB .fir .form .info {
+          height: 40px;
+          line-height: 40px;
+          margin: 2px 0;
+          margin-top: 40px; }
+          #main .mainB .fir .form .info input {
+            vertical-align: middle;
+            margin-right: 3px; }
+          #main .mainB .fir .form .info a {
+            float: right;
+            color: #E31938; }
+        #main .mainB .fir .form .submit input {
+          width: 300px;
+          height: 38px;
+          border: none;
+          background: #E31938;
+          border-radius: 2px;
+          font-size: 14px;
+          line-height: 38px;
+          text-align: center;
+          color: #fff;
+          cursor: pointer;
+          outline: none; }
+        #main .mainB .fir .form .links {
+          height: 60px; }
+          #main .mainB .fir .form .links a {
+            display: inline-block;
+            width: 70px;
+            height: 34px;
+            margin: 20px 0 0 2px;
+            line-height: 34px; }
+            #main .mainB .fir .form .links a i {
+              vertical-align: middle;
+              display: inline-block;
+              width: 24px;
+              height: 24px;
+              background: url(../images/login.png) no-repeat; }
+          #main .mainB .fir .form .links .weixin {
+            background-position: -170px -40px; }
+          #main .mainB .fir .form .links .qq {
+            background-position: -9px -40px; }
+          #main .mainB .fir .form .links .weibo {
+            background-position: -62px -40px; }
+          #main .mainB .fir .form .links .zhifubao {
+            background-position: -123px -40px; }
+
+#footer {
+  background: #fafafa;
+  height: 90px; }
+  #footer .w {
+    width: 990px;
+    margin: 0 auto;
+    text-align: center; }
+    #footer .w .footT {
+      margin-top: 20px;
+      height: 26px;
+      line-height: 26px;
+      color: #666; }
+      #footer .w .footT a {
+        padding: 0 2px; }
+        #footer .w .footT a:hover {
+          color: #E31938; }
+    #footer .w .footB {
+      color: #555;
+      height: 26px;
+      line-height: 26px; }
+
+/*# sourceMappingURL=login.css.map */
