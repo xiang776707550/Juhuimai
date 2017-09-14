@@ -90,7 +90,7 @@ $(function(){
 		if(flag1 && flag2 && flag3 && flag4){
 			$("form").submit();
 			setCookie("phone",$("#uname").val());
-			setCookie("password",$("#upwd").val());
+			setCookie("passw1",$("#upwd").val());
 			
 		}else{
 			return false;
@@ -177,12 +177,52 @@ $(function(){
 //		alert()
 		if(ok1 && ok2 && ok3 && ok4){
 			$("form").submit();
-			setCookie("email",$("#uname1").val());
-			setCookie("password",$("#upwd1").val());
+			setCookie("emaile",$("#uname1").val());
+			setCookie("passw2",$("#upwd1").val());
 			
 		}else{
 			return false;
 		}
 	})
+	
+	
+	$("#upwd").focus(function(){
+		$(".stringe").show();
+	}).keyup(function(){
+		var val = $(this).val();
+		var num = checkStrong(val);
+		switch (num){
+			case 0 :
+				break;
+			case 1 :
+				$(".stringe").find(".li1").addClass("active1");
+				break;
+			case 2 :
+				$(".stringe").find(".li2").addClass("active2").prev().removeClass("active1");
+				
+				break;
+			case 3:
+				$(".stringe").find(".li3").addClass("active3").prevAll().removeClass("active1 active2");
+				break;
+				default:
+				break;
+		}
+	})
+	
+	//密码强度
+	
+	function checkStrong(val) {
+        var modes = 0;
+        if (val.length < 6) return 0;
+        if (/\d/.test(val)) modes++; //数字
+        if (/[a-z]/.test(val)) modes++; //小写
+        if (/[A-Z]/.test(val)) modes++; //大写  
+        if (/\W/.test(val)) modes++; //特殊字符
+        if (val.length > 12) return 4;
+        return modes;
+    };
+ 
+	
+
 	
 })

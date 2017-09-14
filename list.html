@@ -5,16 +5,536 @@
 		<title></title>
 		<link rel="stylesheet" type="text/css" href="css/public.css"/>
 		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/list.css"/>
 		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/list.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/cookie.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 	<body>
 		<div id="header-warp"></div>
-		<div id="main">
+		<div id="main" class="wid">
+			<div class="breadcrumb">
+				<i></i>
+				<a href="index.html">首页</a>
+				>
+				<a href="list.html">服装服饰</a>
+				>
+				<a href="list.html">女装馆</a>
+				>
+				<a href="list.html">连衣裙</a>
+			</div>
+			<div class="sell clear">
+				<div class="sell_L">
+					<div class="hot">
+						热卖推荐
+					</div>
+					<div class="groom clear" id="groom">
+						<!--<dl class="clear">
+							<dt>
+								<a href="details.html">
+									<img src="images/girl1.jpg">
+								</a>
+							</dt>
+							<dd>
+								<div class="title">
+									<a href="details.html">
+										2016春秋季新款韩版胖MM大码女装宽松...
+									</a>
+								</div>
+								<div class="price">
+									<i>特价 :</i>
+									<b>88.0</b>
+								</div>
+								<div class="detail">
+									<a href="details.html">查看详情</a>
+								</div>
+							</dd>
+						</dl>
+						-->
+						
+					</div>
+				</div>
+				<div class="sell_R">
+					<div class="activity">
+						促销活动
+					</div>
+					<div class="gift">
+						<ul>
+							<li>
+								<a href="list.html">
+									[礼包] 厨房电器优惠
+								</a>
+							</li>
+							<li>
+								<a href="list.html">
+									[礼包] 厨房电器优惠
+								</a>
+							</li>
+							<li>
+								<a href="list.html">
+									[礼包] 厨房电器优惠优惠
+								</a>
+							</li>
+							<li>
+								<a href="list.html">
+									[礼包] 厨房电器优惠优惠
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
 			
 			
+			<div class="attr">
+				<h4>
+					<span>连衣裙</span>
+					-
+					<b>商品筛选</b>
+				</h4>
+				<dl class="brand clear">
+					<dt>品牌:</dt>
+					<dd>
+						<ul class="clear">
+							<li>
+								<a href="list.html">
+									<img src="images/l2.jpg">		
+								</a>
+							</li>
+							<li>
+								<a href="list.html">
+									<img src="images/l3.jpg">		
+								</a>
+							</li>
+							<li>
+								<a href="list.html">
+									<img src="images/l4.jpg">		
+								</a>
+							</li>
+							<li>
+								<a href="list.html">
+									<img src="images/l5.jpg">		
+								</a>
+							</li>
+							<li>
+								<a href="list.html">
+									<img src="images/l6.jpg">		
+								</a>
+							</li>
+							<li>
+								<a href="list.html">
+									其他
+								</a>
+							</li>
+						</ul>
+					</dd>
+				</dl>
+				<dl class="price clear">
+					<dt>价格:</dt>
+					<dd>
+						<ul class="clear">
+							<li>
+								<a href="#">50 - 120</a>
+							</li>
+							<li>
+								<a href="#">120 - 180</a>
+							</li>
+							<li>
+								<a href="#">180 - 260</a>
+							</li>
+							<li>
+								<a href="#">260 - 320</a>
+							</li>
+							<li>
+								<a href="#">320 - 400</a>
+							</li>
+							<li>
+								<input type="text" id="start" placeholder="0" />
+								<i>-</i>
+								<input type="text" id="end" placeholder="0" />
+								<a href="#" id="btn">确定</a>
+							</li>
+						</ul>
+					</dd>
+				</dl>
+			</div>
 			
+			<div id="girl" class="clear">
+				<div class="girl_l">
+					<div id="sortlist">
+						<div id="cate">
+							<div class="item clear">
+								<h3>
+									<b></b>
+									女装馆
+								</h3>
+								<ul class="clear">
+									<li>
+										<a href="list.html">连衣裙</a>
+									</li>
+									<li>
+										<a href="list.html">连衣裙</a>
+									</li>
+									<li>
+										<a href="list.html">连衣裙</a>
+									</li>
+									<li>
+										<a href="list.html">连衣裙</a>
+									</li>
+									<li>
+										<a href="list.html">连衣裙</a>
+									</li>
+									<li>
+										<a href="list.html">连衣裙</a>
+									</li>
+									<li>
+										<a href="list.html">连衣裙</a>
+									</li>
+									<li>
+										<a href="list.html">连衣裙</a>
+									</li>
+								</ul>
+							</div>
+							<div class="item clear">
+								<h3>
+									<b></b>
+									T恤
+								</h3>
+								<ul class="clear">
+									
+								</ul>
+							</div>
+							<div class="item clear">
+								<h3>
+									<b></b>
+									中长款/半身裙
+								</h3>
+								<ul class="clear">
+									
+								</ul>
+							</div>
+							<div class="item clear">
+								<h3>
+									<b></b>
+									夹克/风衣
+								</h3>
+								<ul class="clear">
+									
+								</ul>
+							</div>
+							<div class="item clear">
+								<h3>
+									<b></b>
+									男装馆
+								</h3>
+								<ul class="clear">
+									<li>
+										<a href="list.html">连衣裙</a>
+									</li>
+									<li>
+										<a href="list.html">连衣裙</a>
+									</li>
+									<li>
+										<a href="list.html">连衣裙</a>
+									</li>
+									<li>
+										<a href="list.html">连衣裙</a>
+									</li>
+									<li>
+										<a href="list.html">连衣裙</a>
+									</li>
+									<li>
+										<a href="list.html">连衣裙</a>
+									</li>
+									<li>
+										<a href="list.html">连衣裙</a>
+									</li>
+									<li>
+										<a href="list.html">连衣裙</a>
+									</li>
+								</ul>
+							</div>
+							<div class="item clear">
+								<h3>
+									<b></b>
+									内衣馆
+								</h3>
+								<ul class="clear">
+									<li>
+										<a href="list.html">连衣裙</a>
+									</li>
+									<li>
+										<a href="list.html">连衣裙</a>
+									</li>
+									<li>
+										<a href="list.html">连衣裙</a>
+									</li>
+									<li>
+										<a href="list.html">连衣裙</a>
+									</li>
+									<li>
+										<a href="list.html">连衣裙</a>
+									</li>
+									<li>
+										<a href="list.html">连衣裙</a>
+									</li>
+									<li>
+										<a href="list.html">连衣裙</a>
+									</li>
+									<li>
+										<a href="list.html">连衣裙</a>
+									</li>
+								</ul>
+							</div>
+							<div class="item clear">
+								<h3>
+									<b></b>
+									户外鞋服
+								</h3>
+								<ul class="clear">
+									<li>
+										<a href="list.html">连衣裙</a>
+									</li>
+									<li>
+										<a href="list.html">连衣裙</a>
+									</li>
+									<li>
+										<a href="list.html">连衣裙</a>
+									</li>
+									<li>
+										<a href="list.html">连衣裙</a>
+									</li>
+									<li>
+										<a href="list.html">连衣裙</a>
+									</li>
+									<li>
+										<a href="list.html">连衣裙</a>
+									</li>
+									<li>
+										<a href="list.html">连衣裙</a>
+									</li>
+									<li>
+										<a href="list.html">连衣裙</a>
+									</li>
+								</ul>
+							</div>
+							<div class="item clear">
+								<h3>
+									<b></b>
+									鞋帽
+								</h3>
+								<ul class="clear">
+									<li>
+										<a href="list.html">连衣裙</a>
+									</li>
+									<li>
+										<a href="list.html">连衣裙</a>
+									</li>
+									<li>
+										<a href="list.html">连衣裙</a>
+									</li>
+									<li>
+										<a href="list.html">连衣裙</a>
+									</li>
+									<li>
+										<a href="list.html">连衣裙</a>
+									</li>
+									<li>
+										<a href="list.html">连衣裙</a>
+									</li>
+									<li>
+										<a href="list.html">连衣裙</a>
+									</li>
+									<li>
+										<a href="list.html">连衣裙</a>
+									</li>
+								</ul>
+							</div>
+							<div class="item clear">
+								<h3>
+									<b></b>
+									箱包馆
+								</h3>
+								<ul class="clear">
+									<li>
+										<a href="list.html">连衣裙</a>
+									</li>
+									<li>
+										<a href="list.html">连衣裙</a>
+									</li>
+									<li>
+										<a href="list.html">连衣裙</a>
+									</li>
+									<li>
+										<a href="list.html">连衣裙</a>
+									</li>
+									<li>
+										<a href="list.html">连衣裙</a>
+									</li>
+									<li>
+										<a href="list.html">连衣裙</a>
+									</li>
+									<li>
+										<a href="list.html">连衣裙</a>
+									</li>
+									<li>
+										<a href="list.html">连衣裙</a>
+									</li>
+								</ul>
+							</div>
+							
+						</div>
+					</div>
+					<div class="product">
+						<h3>新品推荐</h3>
+						<ul class="new">
+							<li>
+								<p class="img">
+									<a href="details.html" class="img">
+										<img src="images/girl1.jpg"/>
+									</a>
+								</p>
+								<p class="title">
+									<a href="details.html">
+										2016春秋季新款韩版胖MM大码女中长款假两件棉麻长袖连衣
+									</a>
+								</p>
+								<p class="price">
+									<i>88.0</i>
+									<b>188</b>
+								</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="girl_r">
+					<div class="box">
+						<div class="filter">
+							<div class="filter_t clear">
+								
+								<ul class="clear">
+									<li>排序:</li>
+									<li>
+										<a href="javascript:;">
+											上架
+											<b></b>
+										</a>
+										
+									</li>
+									<li>
+										<a href="javascript:;">
+											销量
+											<b></b>
+										</a>
+										
+									</li>
+									<li>
+										<a href="javascript:;">
+											价格
+											<b></b>
+										</a>
+										
+									</li>
+									<li class="special">
+										<a href="javascript:;">
+											更新
+											<b></b>
+										</a>
+										
+									</li>
+									<li>
+										<a href="javascript:;">
+											人气
+											<b></b>
+										</a>
+										
+									</li>
+								</ul>
+								<div class="paging">
+									<span id="num">
+										共16个商品
+									</span>
+									<b class="start">1</b>/
+									<b class="end">1</b>
+									<a href="javascript:;" id="leftm"><</a>
+									<a href="javascript:;" id="rightm">></a>
+								</div>
+								
+							</div>
+							<div class="filter_b clear">
+								<div class="goods">
+									<span id="have">
+										仅显示有货
+									</span>
+									<a href="javascript:;" class="redd">全部</a>
+									<a href="javascript:;">网站自营</a>
+									<a href="javascript:;">入驻商店铺</a>
+								</div>
+								<div class="mode">
+									<a href="javascript:;">
+										<img src="images/mode1.gif">
+									</a>
+									<a href="javascript:;">
+										<img src="images/mode2.gif">
+									</a>
+									<a href="javascript:;">
+										<img src="images/mode3.gif">
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="compare">
+							<ul class="list_pic clear">
+								<!--<li>
+									
+									<div class="img">
+										<a href="details.html">
+											<img src="images/girl5.jpg"/>
+										</a>
+									</div>
+									<div class="info">
+										<a href="details.html">
+											2015夏季小西装女外套夏装薄款韩版修身短款小西服
+										</a>
+									</div>
+									<div class="price">
+										<i>288.0</i>
+										<s>255.6</s>
+									</div>
+									<dl class="clear">
+										<dt>
+											<b>0</b>
+											<span>商品销量</span>
+										</dt>
+										<dt>
+											<b>88</b>
+											<span>用户评论</span>
+										</dt>
+										<dt>
+											<b>1888</b>
+											<span>关注人气</span>
+										</dt>
+									</dl>
+									<div class="love">
+										<a href="javascript:;">
+											
+										</a>
+										<a href="javascript:;"></a>
+									</div>
+									<div class="car">
+										<a href="javascript:;">加入购物车</a>
+									</div>
+								</li>-->
+								
+							</ul>
+						</div>
+						
+						
+						
+					</div>
+				</div>
+			</div>
 			
 			
 			

@@ -1,0 +1,442 @@
+#main {
+  width: 1210px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  font-family: "microsoft yahei"; }
+  #main .breadcrumb {
+    height: 40px;
+    line-height: 40px; }
+    #main .breadcrumb i {
+      vertical-align: middle;
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      background: url(../images/user_header.png) no-repeat -427px -208px; }
+  #main .sell {
+    width: 100%;
+    height: 156px;
+    background: #f5f5f5; }
+    #main .sell .sell_L {
+      float: left;
+      width: 950px;
+      height: 137px;
+      padding-left: 80px;
+      margin-bottom: 15px;
+      padding-top: 15px;
+      position: relative; }
+      #main .sell .sell_L .hot {
+        position: absolute;
+        left: 20px;
+        top: 0;
+        width: 30px;
+        height: 60px;
+        padding: 20px 10px 0 6px;
+        background: url(../images/common1.png) no-repeat -75px -150px;
+        line-height: 18px;
+        text-align: center;
+        color: #f60;
+        font-family: "microsoft yahei"; }
+      #main .sell .sell_L .groom {
+        width: 920px;
+        height: 124px;
+        font-size: 12px; }
+        #main .sell .sell_L .groom dl {
+          float: left;
+          width: 264px;
+          padding: 10px;
+          background: #fff;
+          margin-right: 15px; }
+          #main .sell .sell_L .groom dl dt {
+            float: left;
+            width: 100px;
+            margin-right: 10px; }
+            #main .sell .sell_L .groom dl dt img {
+              display: block;
+              width: 100px;
+              height: 100px; }
+          #main .sell .sell_L .groom dl dd {
+            float: left;
+            width: 146px; }
+            #main .sell .sell_L .groom dl dd .title {
+              line-height: 20px; }
+              #main .sell .sell_L .groom dl dd .title a {
+                color: #333; }
+            #main .sell .sell_L .groom dl dd .price {
+              height: 30px;
+              line-height: 30px; }
+              #main .sell .sell_L .groom dl dd .price i {
+                color: #666; }
+              #main .sell .sell_L .groom dl dd .price b {
+                font-size: 14px;
+                color: #E31938;
+                margin-left: 6px; }
+            #main .sell .sell_L .groom dl dd .detail a {
+              display: block;
+              width: 75px;
+              height: 25px;
+              background: #E31938;
+              text-align: center;
+              color: #fff;
+              line-height: 25px; }
+    #main .sell .sell_R {
+      float: right;
+      width: 178px;
+      height: 153px;
+      position: relative; }
+      #main .sell .sell_R .activity {
+        width: 30px;
+        height: 60px;
+        padding: 20px 10px 0 10px;
+        position: absolute;
+        left: -48px;
+        top: 0;
+        color: #f60;
+        line-height: 18px;
+        background: url(../images/common1.png) no-repeat -75px -150px; }
+      #main .sell .sell_R .gift ul li {
+        padding-left: 25px;
+        height: 24px;
+        line-height: 24px; }
+  #main .attr {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    margin: 15px 0; }
+    #main .attr h4 {
+      height: 35px;
+      line-height: 35px;
+      background: #f4f4f4;
+      font-size: 14px;
+      border-left: 1px solid #ddd;
+      border-right: 1px solid #ddd; }
+      #main .attr h4 span {
+        color: #E22A40;
+        margin-left: 15px; }
+    #main .attr .brand {
+      border-left: 1px solid #ddd;
+      border-right: 1px solid #ddd;
+      padding: 10px 10px 15px 10px;
+      border-bottom: 1px dashed #ddd; }
+      #main .attr .brand dt {
+        float: left;
+        margin-left: 35px; }
+      #main .attr .brand dd {
+        float: left;
+        margin-left: 10px; }
+        #main .attr .brand dd ul li {
+          width: 75px;
+          height: 34px;
+          line-height: 34px;
+          border: 1px solid #ddd;
+          float: left;
+          text-align: center;
+          margin-right: 10px; }
+          #main .attr .brand dd ul li a {
+            display: block; }
+            #main .attr .brand dd ul li a img {
+              display: block;
+              width: 74px;
+              height: 34px; }
+    #main .attr .price {
+      border-left: 1px solid #ddd;
+      border-right: 1px solid #ddd;
+      padding: 10px 10px 15px 10px; }
+      #main .attr .price dt {
+        float: left;
+        margin-left: 35px;
+        height: 20px;
+        line-height: 20px; }
+      #main .attr .price dd {
+        float: left;
+        margin-left: 10px; }
+        #main .attr .price dd ul {
+          height: 20px;
+          line-height: 20px; }
+          #main .attr .price dd ul li {
+            margin-right: 10px;
+            float: left;
+            vertical-align: middle; }
+            #main .attr .price dd ul li input {
+              width: 60px;
+              height: 20px;
+              outline: none;
+              text-indent: 6px; }
+            #main .attr .price dd ul li #btn {
+              display: inline-block;
+              width: 45px;
+              height: 22px;
+              background: #e7e7e7;
+              border-radius: 2px;
+              line-height: 22px;
+              text-align: center;
+              border: 1px solid #ddd; }
+  #main #girl .girl_l {
+    float: left;
+    width: 210px; }
+    #main #girl .girl_l #sortlist {
+      border: 1px solid #ddd; }
+      #main #girl .girl_l #sortlist #cate {
+        width: 208px;
+        background: #fff; }
+        #main #girl .girl_l #sortlist #cate .item h3 {
+          font-weight: 300;
+          height: 35px;
+          line-height: 35px;
+          border-bottom: 1px solid #eee;
+          background: #F9F9F9;
+          font-size: 14px;
+          color: #555;
+          cursor: pointer; }
+          #main #girl .girl_l #sortlist #cate .item h3 b {
+            margin-left: 10px;
+            padding-right: 6px;
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            background: url(../images/common1.png) no-repeat 6px -246px; }
+          #main #girl .girl_l #sortlist #cate .item h3 .current {
+            background-position: -11px -246px; }
+        #main #girl .girl_l #sortlist #cate .item ul {
+          padding: 6px 0;
+          padding-left: 35px;
+          display: none; }
+          #main #girl .girl_l #sortlist #cate .item ul li {
+            float: left;
+            width: 71px;
+            height: 18px;
+            padding: 2px 0 3px 0; }
+            #main #girl .girl_l #sortlist #cate .item ul li a:hover {
+              color: #E12545;
+              text-decoration: underline; }
+    #main #girl .girl_l .product {
+      margin-top: 10px;
+      border: 1px solid #ddd; }
+      #main #girl .girl_l .product h3 {
+        font-weight: 300;
+        height: 35px;
+        line-height: 35px;
+        border-bottom: 1px solid #eee;
+        background: #F9F9F9;
+        font-size: 14px;
+        color: #555;
+        cursor: pointer;
+        padding-left: 10px; }
+      #main #girl .girl_l .product .new li {
+        margin: 15px 0; }
+        #main #girl .girl_l .product .new li .img {
+          margin: 0 auto; }
+          #main #girl .girl_l .product .new li .img a {
+            display: block;
+            width: 100px;
+            heihgt: 100px; }
+            #main #girl .girl_l .product .new li .img a img {
+              display: block;
+              width: 100px;
+              height: 100px; }
+        #main #girl .girl_l .product .new li .title {
+          width: 180px;
+          margin: 0 auto;
+          line-height: 18px;
+          margin-top: 10px;
+          margin-bottom: 6px; }
+        #main #girl .girl_l .product .new li .price {
+          width: 180px;
+          margin: 0 auto; }
+          #main #girl .girl_l .product .new li .price i {
+            color: #E22A40; }
+          #main #girl .girl_l .product .new li .price b {
+            margin-left: 10px;
+            text-decoration: line-through;
+            color: #999; }
+  #main #girl .girl_r {
+    float: right;
+    width: 990px; }
+    #main #girl .girl_r .box .filter {
+      border: 1px solid #e7e3e7;
+      background: #F7F7F7;
+      box-shadow: 0 1px 1px #F1F1F1; }
+      #main #girl .girl_r .box .filter .filter_t {
+        height: 35px;
+        line-height: 35px;
+        border-bottom: 1px soid #eee;
+        background: #e7e7e7; }
+        #main #girl .girl_r .box .filter .filter_t ul {
+          float: left;
+          margin-left: 10px; }
+          #main #girl .girl_r .box .filter .filter_t ul li {
+            margin-left: 6px;
+            float: left; }
+            #main #girl .girl_r .box .filter .filter_t ul li a {
+              display: inline-block;
+              height: 24px;
+              padding: 0 20px 0 10px;
+              border: 1px solid #ddd;
+              line-height: 24px;
+              background: #fff;
+              position: relative; }
+              #main #girl .girl_r .box .filter .filter_t ul li a b {
+                position: absolute;
+                top: 5px;
+                left: 35px;
+                width: 14px;
+                height: 14px;
+                display: inline-block;
+                background: url(../images/common1.png) no-repeat -50px 0; }
+          #main #girl .girl_r .box .filter .filter_t ul .special a {
+            background: #E22A40;
+            border-color: #E22A40;
+            color: #fff; }
+            #main #girl .girl_r .box .filter .filter_t ul .special a b {
+              background-position: -75px -25px; }
+        #main #girl .girl_r .box .filter .filter_t .paging {
+          float: right;
+          height: 35px;
+          line-height: 35px; }
+          #main #girl .girl_r .box .filter .filter_t .paging #num {
+            height: 30px;
+            line-height: 30px;
+            color: #E22A40;
+            margin-right: 20px;
+            border-right: 2px solid #eee;
+            padding-right: 6px; }
+          #main #girl .girl_r .box .filter .filter_t .paging .start {
+            color: #E22A40; }
+          #main #girl .girl_r .box .filter .filter_t .paging .end {
+            margin-right: 10px; }
+          #main #girl .girl_r .box .filter .filter_t .paging a {
+            display: inline-block;
+            width: 27px;
+            height: 24px;
+            border: 1px solid #eee;
+            vertical-align: middle;
+            font-size: 16px;
+            line-height: 24px;
+            text-align: center;
+            background: #fff; }
+      #main #girl .girl_r .box .filter .filter_b {
+        background: #eee;
+        height: 26px;
+        line-height: 26px;
+        padding: 5px 15px; }
+        #main #girl .girl_r .box .filter .filter_b .goods {
+          float: left; }
+          #main #girl .girl_r .box .filter .filter_b .goods #have {
+            display: inline-block;
+            height: 24px;
+            padding: 0 8px;
+            border: 1px solid #eee;
+            background: #fff;
+            margin-right: 10px; }
+          #main #girl .girl_r .box .filter .filter_b .goods a {
+            margin-left: 15px; }
+          #main #girl .girl_r .box .filter .filter_b .goods .redd {
+            color: #E31939; }
+        #main #girl .girl_r .box .filter .filter_b .mode {
+          float: right; }
+          #main #girl .girl_r .box .filter .filter_b .mode a {
+            margin-left: 5px; }
+    #main #girl .girl_r .box .compare .list_pic {
+      width: 996px; }
+      #main #girl .girl_r .box .compare .list_pic li {
+        position: relative;
+        float: left;
+        width: 230px;
+        height: 382px;
+        margin: 22px 20px 0 12px;
+        border: 1px solid #eee;
+        border-radius: 2px;
+        margin-left: 0; }
+        #main #girl .girl_r .box .compare .list_pic li:nth-child(4n) {
+          margin-right: 0; }
+        #main #girl .girl_r .box .compare .list_pic li .img {
+          position: inherit;
+          z-index: 6; }
+          #main #girl .girl_r .box .compare .list_pic li .img img {
+            padding: 15px 0 0 15px;
+            display: block;
+            width: 200px;
+            height: 200px; }
+        #main #girl .girl_r .box .compare .list_pic li .info {
+          position: inherit;
+          z-index: 6;
+          width: 200px;
+          margin: 9px auto;
+          line-height: 18px; }
+        #main #girl .girl_r .box .compare .list_pic li .price {
+          position: inherit;
+          z-index: 6;
+          width: 200px;
+          margin: 0 auto; }
+          #main #girl .girl_r .box .compare .list_pic li .price i {
+            font-size: 16px;
+            color: #E22A40; }
+          #main #girl .girl_r .box .compare .list_pic li .price s {
+            text-decoration: line-through;
+            margin-left: 15px; }
+        #main #girl .girl_r .box .compare .list_pic li dl {
+          position: inherit;
+          z-index: 6;
+          width: 200px;
+          margin: 0 auto;
+          margin-top: 10px; }
+          #main #girl .girl_r .box .compare .list_pic li dl dt {
+            text-align: center;
+            float: left;
+            width: 60px;
+            height: 46px;
+            padding: 2px;
+            border-top: 1px solid #eee;
+            border-right: 1px solid #eee;
+            color: #666; }
+            #main #girl .girl_r .box .compare .list_pic li dl dt b {
+              display: block;
+              line-height: 26px; }
+            #main #girl .girl_r .box .compare .list_pic li dl dt:nth-child(1) b {
+              color: #0000FF; }
+            #main #girl .girl_r .box .compare .list_pic li dl dt:nth-child(2) b {
+              color: #E12545; }
+            #main #girl .girl_r .box .compare .list_pic li dl dt:nth-child(3) b {
+              color: #E12545; }
+        #main #girl .girl_r .box .compare .list_pic li .love {
+          position: inherit;
+          z-index: 6;
+          height: 30px;
+          background: #eee;
+          border-top: 1px solid #ddd;
+          border-radius: 0 0 2px 2px; }
+          #main #girl .girl_r .box .compare .list_pic li .love a {
+            background: #FF4A00;
+            display: inline-block;
+            height: 21px;
+            width: 58px;
+            margin-left: 35px;
+            margin-top: 6px;
+            background: url(../images/common1.png) no-repeat; }
+            #main #girl .girl_r .box .compare .list_pic li .love a:nth-child(1) {
+              background-position: 0 -75px; }
+            #main #girl .girl_r .box .compare .list_pic li .love a:nth-child(2) {
+              background-position: 0 -200px; }
+        #main #girl .girl_r .box .compare .list_pic li .car {
+          position: absolute;
+          top: 0;
+          left: -2px;
+          width: 230px;
+          height: 413px;
+          border: 2px solid #E31938;
+          text-align: center;
+          border-radius: 2px;
+          z-index: 1;
+          display: none; }
+          #main #girl .girl_r .box .compare .list_pic li .car button {
+            border: none;
+            width: 100%;
+            display: block;
+            height: 32px;
+            line-height: 32px;
+            position: absolute;
+            bottom: 0;
+            background: #E12545;
+            color: #fff;
+            cursor: pointer;
+            outline: none; }
+
+/*# sourceMappingURL=list.css.map */

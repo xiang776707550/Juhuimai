@@ -1,139 +1,229 @@
 $(function(){
 	
-	$("#header-warp").load("http://127.0.0.1/Juhuimai/common.html #header",function(){
-		$(".nav-r #me").hover(function(){
-			$(".info").fadeIn(10);
-			$(".info").css("border-top-color","#fff");
 	
-		},function(){
-			$(".info").fadeOut(10);
-		})
-		
-		$(".info a").hover(function(){
-			$(this).css({"color":"#f00","text-decoration":"underline"})
-			
-		},function(){
-			$(this).css({"color":"#666","text-decoration":"none"})
-		})
-		
-		$(".nav-r #up").hover(function(){
-			$(".store").fadeIn(10);
-			$(".store").css("border-top-color","#fff");
 	
-		},function(){
-			$(".store").fadeOut(10);
-		})
-		
-		$(".store a").hover(function(){
-			$(this).css({"color":"#f00","text-decoration":"underline"})
-			
-		},function(){
-			$(this).css({"color":"#666","text-decoration":"none"})
-		})
-		
-		$(".nav-r #ph").hover(function(){
-			$(".weixin").fadeIn(10);
-			$(".weixin").css("border-top-color","#fff");
 	
-		},function(){
-			$(".weixin").fadeOut(10);
+	
+	
+	$(".item").each(function(){
+		$(this).find("h3").click(function(){
+			$(this).next("ul").slideToggle(10);
+			$(this).find("b").toggleClass("current")
 		})
-		
-		$(".nav-r #duc").hover(function(){
-			$(".support").fadeIn(10);
-			$(".support").css("border-top-color","#fff");
-		},function(){
-			$(".support").fadeOut(10);
-		})
-		
-		$(".support a").hover(function(){
-			$(this).css({"color":"#f00","text-decoration":"underline"});
-		},function(){
-			$(this).css({"color":"#666","text-decoration":"none"});
-		})
-		
-		$("#web").hover(function(){
-	//		$(this).css("background","#fff");
-			$(".site").fadeIn(10);
-		},function(){
-			$(".site").fadeOut(10);
-		})
-		
-		$("#allList li").hover(function(){
-			/*$("#allList .p1").each(function(index){
-				console.log(index);
-				$("#allList .p1").eq(index).css("background","url(images/icohover.png) 0 -2px");
-			})*/
-			$(this).find(".mum").css("border-bottom","0")
-			$(this).find("a").css("color","#fff");
-			$(this).find(".p1").css("background","url(images/icohover.png) 0 -2px").end().css("background","rgba(227,25,57,1)");
-			$(this).find(".p3").css("background","url(images/icohover.png) 0 -26px").end().css("background","rgba(227,25,57,1)");
-			$(this).find(".p4").css("background","url(images/icohover.png) 0 -50px").end().css("background","rgba(227,25,57,1)");
-			$(this).find(".p5").css("background","url(images/icohover.png) 0 -74px").end().css("background","rgba(227,25,57,1)");
-			$(this).find(".p6").css("background","url(images/icohover.png) 0 -98px").end().css("background","rgba(227,25,57,1)");
-			$(this).find(".p7").css("background","url(images/icohover.png) 0 -122px").end().css("background","rgba(227,25,57,1)");
-			$(this).find(".p8").css("background","url(images/icohover.png) 0 -146px").end().css("background","rgba(227,25,57,1)");
-			$(this).find(".p9").css("background","url(images/icohover.png) 0 -170px").end().css("background","rgba(227,25,57,1)");
-		},function(){
-			$(this).find(".p1").css("background","").end().css("background","");
-			$(this).find(".p3").css("background","").end().css("background","");
-			$(this).find(".p4").css("background","").end().css("background","");
-			$(this).find(".p5").css("background","").end().css("background","");
-			$(this).find(".p6").css("background","").end().css("background","");
-			$(this).find(".p7").css("background","").end().css("background","");
-			$(this).find(".p8").css("background","").end().css("background","");
-			$(this).find(".p9").css("background","").end().css("background","");
-			$(this).find("a").css("color","");
-			$(this).find(".mum").css("border-bottom","")
-		})
-		
-		$.ajax({
+	})
+	
+	var $li = $(".filter_t ul").find("li");
+	$li.click(function(){
+		$(this).addClass("special").siblings().removeClass("special");
+	})
+	
+	var $a = $(".filter_t ul").find("li").find("a");
+	$a.hover(function(){
+		$(this).css("color","#E22A40");
+	},function(){
+		$(this).not().css("color","");
+	})
+	
+	
+	
+	
+	$.ajax({
 		type:"get",
-		url:"http://127.0.0.1/Juhuimai/data/common.json",
+		url:"data/list.json",
 		success:function(res){
-			console.log(res)
-			var html = "";
-			for(var i in res){
-				console.log(res[i].subNavList[0].subNavTit)
-				var nav = res[i].subNavList[0];
-				html += `<div class="showL">
-									<div class="list1 clear">
-										<div class="cat">
-											<a href="#">${nav.subNavTit}:</a>
-										</div>
-										<div class="list">
-											
-										</div>
-									</div>
-									
-								</div>`
+			console.log(res);
+			var html1 = "";
+			for(var i=0;i<3;i++){
+				html1 +=`<dl class="clear">
+							<dt>
+								<a href="details.html">
+									<img src="images/${res[i].img}">
+								</a>
+							</dt>
+							<dd>
+								<div class="title">
+									<a href="details.html">
+										${res[i].title}
+									</a>
+								</div>
+								<div class="price">
+									<i>特价 :</i>
+									<b>${res[i].price}</b>
+								</div>
+								<div class="detail">
+									<a href="details.html">查看详情</a>
+								</div>
+							</dd>
+						</dl>`
 			}
-			$("#showList").html(html);
+			$(".groom").html(html1);
+
+			var html2 = "";
+			for(var i=3;i<res.length;i++){
+				html2 += `<li>
+									
+							<div class="img imgg">
+								<span data-id=${res[i].id}  data-img=${res[i].img} data-title=${res[i].title} data-price=${res[i].price} data-mprice=${res[i].mprice}  style="display:none"></span>	
+							
+								<a class="links" href="details.html?pid=${res[i].id}">
+									<img src="images/${res[i].img}"/>
+								</a>
+							</div>
+							<div class="info">
+								<a href="details.html?pid=${res[i].id}">
+									${res[i].title}
+								</a>
+							</div>
+							<div class="price">
+								<i>${res[i].price}</i>
+								<s>${res[i].mprice}</s>
+							</div>
+							<dl class="clear">
+								<dt>
+									<b>0</b>
+									<span>商品销量</span>
+								</dt>
+								<dt>
+									<b>88</b>
+									<span>用户评论</span>
+								</dt>
+								<dt>
+									<b>1888</b>
+									<span>关注人气</span>
+								</dt>
+							</dl>
+							<div class="love">
+								<a href="javascript:;">
+									
+								</a>
+								<a href="javascript:;"></a>
+							</div>
+							<div class="car">
+								<span data-id=${res[i].id}  data-img=${res[i].img} data-title=${res[i].title} data-price=${res[i].price} data-mprice=${res[i].mprice}  style="display:none"></span>	
+								<button class="btnn">加入购物车</button>
+							</div>
+						</li>`
+			}
+			$(".list_pic").html(html2);
+			
+			
+			//li
+			$(".list_pic li").each(function(){
+				$(this).hover(function(){
+					$(this).find(".car").fadeIn(100);
+				},function(){
+					$(this).find(".car").fadeOut(100);
+				})
+			})
+			
+			$(".love a:first-child").click(function(){
+				$(this).css({"background-position-x":0,"background-position-y":-99});
+			});
+			
+			$(".love a:last-child").click(function(){
+				$(this).css({"background-position-x":0,"background-position-y":-225});
+			})
+	
+			var html3 = "";
+			for(var i=0;i<8;i++){
+				html3 +=`<li>
+								<p class="img">
+									<a href="details.html" class="img">
+										<img src="images/${res[i].img}"/>
+									</a>
+								</p>
+								<p class="title">
+									<a href="details.html">
+										${res[i].title}
+									</a>
+								</p>
+								<p class="price">
+									<i>${res[i].price}</i>
+									<b>${res[i].mprice}</b>
+								</p>
+							</li>`
+			}
+			$(".new").html(html3);
+			
+			
+			
+			
+			
+			$(".btnn").click(function(){
+				var arr = [];
+				var flag = true;
+				var _json = {
+					id:$(this).prev().data("id"),
+					img:$(this).prev().data("img"),
+					title:$(this).prev().data("title"),
+					price:$(this).prev().data("price"),
+					mprice:$(this).prev().data("mprice"),
+					count:1
+				}
+				var cookieInfo = getCookie("shoplist");
+				if( cookieInfo.length !=0){
+					arr = cookieInfo;
+					for(var i in arr){
+						if(_json.id == arr[i].id){
+							arr[i].count++;
+							flag = false;
+							break;
+						}
+					}
+				}
+				
+		
+				if(flag){
+					arr.push(_json);
+				}
+				console.log(arr);
+				setCookie("shoplist",JSON.stringify(arr));
+				var f = confirm("是否继续购买?确定--继续购买，取消---去购物车结算");
+				if( !f ){
+					location.href = "shopCar.html"
+				}
+//				console.log(document.cookie);
+			})
+			
+			
+			$(".links").click(function(){
+				var arr = [];
+				var flag = true;
+				var _json = {
+					id:$(this).prev().data("id"),
+					img:$(this).prev().data("img"),
+					title:$(this).prev().data("title"),
+					price:$(this).prev().data("price"),
+					mprice:$(this).prev().data("mprice"),
+					count:1
+				}
+				var cookieInfo = getCookie("shoplist");
+				if( cookieInfo.length !=0){
+					arr = cookieInfo;
+					for(var i in arr){
+						if(_json.id == arr[i].id){
+							arr[i].count++;
+							flag = false;
+							break;
+						}
+					}
+				}
+				
+		
+				if(flag){
+					arr.push(_json);
+				}
+				console.log(arr);
+				setCookie("shoplist",JSON.stringify(arr));
+			})
 		}
 		
-
-		});
 		
-		$(".searchT li").click(function(){
-			$(this).find("a").addClass("act").end().siblings().find("a").removeClass("act");
-		})
-		
-		$("#carList").hide();
-		$("#showList").hide();
 		
 	});
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
+
 	
 	
 	

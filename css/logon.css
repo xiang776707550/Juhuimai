@@ -152,13 +152,19 @@
           #main .mainB .fir .form .password .stringe {
             display: none;
             height: 30px;
-            padding: 10px 0; }
+            padding: 2px 0; }
             #main .mainB .fir .form .password .stringe li {
               width: 98px;
               height: 30px;
               float: left;
               line-height: 30px;
               text-align: center; }
+            #main .mainB .fir .form .password .stringe .active1 {
+              border-bottom: 2px solid #E31938; }
+            #main .mainB .fir .form .password .stringe .active2 {
+              border-bottom: 2px solid #faf840; }
+            #main .mainB .fir .form .password .stringe .active3 {
+              border-bottom: 2px solid #5afa40; }
           #main .mainB .fir .form .password span {
             position: absolute;
             height: 30px;
@@ -275,7 +281,7 @@
     margin: 0 auto;
     text-align: center; }
     #footer .w .footT {
-      margin-top: 20px;
+      margin-top: 35px;
       height: 26px;
       line-height: 26px;
       color: #666; }

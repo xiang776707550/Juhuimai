@@ -250,7 +250,8 @@
           line-height: 25px;
           text-align: center; }
     #header #headerCon #searchAll .searchC {
-      padding-bottom: 8px; }
+      padding-bottom: 8px;
+      position: relative; }
       #header #headerCon #searchAll .searchC #search {
         width: 439px;
         height: 32px;
@@ -259,6 +260,31 @@
         border: 2px solid #e31939;
         text-indent: 10px;
         float: left; }
+      #header #headerCon #searchAll .searchC #list {
+        width: 440px;
+        height: 300px;
+        border: 1px solid #f07;
+        background: #fff;
+        position: absolute;
+        z-index: 1000;
+        top: 35px;
+        display: none; }
+        #header #headerCon #searchAll .searchC #list li {
+          height: 30px;
+          line-height: 30px;
+          cursor: pointer; }
+          #header #headerCon #searchAll .searchC #list li:hover {
+            background: #f09; }
+          #header #headerCon #searchAll .searchC #list li a {
+            margin-left: 10px; }
+          #header #headerCon #searchAll .searchC #list li .act {
+            color: #999; }
+          #header #headerCon #searchAll .searchC #list li .del {
+            cursor: pointer;
+            text-decoration: underline;
+            color: #333;
+            float: right;
+            margin-right: 10px; }
       #header #headerCon #searchAll .searchC #searc {
         width: 90px;
         height: 36px;
@@ -429,6 +455,213 @@
         font-size: 16px; }
         #header #navA .navAr li a:hover {
           color: #e31939; }
+#header #sidebar-nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: auto;
+  width: 35px;
+  height: 100%;
+  padding-top: 1px;
+  background: #333333;
+  z-index: 88888; }
+  #header #sidebar-nav .mods {
+    position: relative;
+    height: 100%; }
+    #header #sidebar-nav .mods .middle_items {
+      position: absolute;
+      top: 50%;
+      height: 570px;
+      margin-top: -285px; }
+      #header #sidebar-nav .mods .middle_items .login_info {
+        height: 45px;
+        width: 35px; }
+        #header #sidebar-nav .mods .middle_items .login_info a {
+          display: block;
+          width: 35px;
+          height: 35px; }
+          #header #sidebar-nav .mods .middle_items .login_info a img {
+            display: block;
+            width: 35px;
+            height: 35px; }
+      #header #sidebar-nav .mods .middle_items .mod {
+        width: 35px;
+        height: 45px;
+        margin: 20px 0 14px;
+        position: relative; }
+      #header #sidebar-nav .mods .middle_items .sale {
+        background: #E12545;
+        text-align: center;
+        line-height: 18px;
+        color: #fff; }
+        #header #sidebar-nav .mods .middle_items .sale .p1 {
+          margin-top: 6px; }
+      #header #sidebar-nav .mods .middle_items .vote {
+        position: relative; }
+        #header #sidebar-nav .mods .middle_items .vote a {
+          display: block;
+          width: 35px;
+          height: 45px;
+          color: #fff; }
+          #header #sidebar-nav .mods .middle_items .vote a .survey {
+            position: absolute;
+            left: 5px; }
+            #header #sidebar-nav .mods .middle_items .vote a .survey i {
+              margin: 0 auto;
+              display: block;
+              margin-bottom: 3px;
+              width: 24px;
+              height: 24px;
+              background: url(../images/site_bar.png) no-repeat -4px -6px; }
+            #header #sidebar-nav .mods .middle_items .vote a .survey b {
+              display: block;
+              text-align: center; }
+          #header #sidebar-nav .mods .middle_items .vote a .online {
+            width: 35px;
+            height: 0;
+            position: absolute;
+            top: 45px;
+            background: #E22A40;
+            color: #fff;
+            text-align: center;
+            line-height: 18px;
+            display: none; }
+            #header #sidebar-nav .mods .middle_items .vote a .online .p1 {
+              margin-top: 3px; }
+        #header #sidebar-nav .mods .middle_items .vote .quest {
+          position: absolute;
+          left: -170px;
+          top: 0;
+          width: 170px;
+          height: 136px;
+          background: #fff;
+          box-shadow: 0 0 5px #ccc;
+          display: none; }
+      #header #sidebar-nav .mods .middle_items .reserve {
+        height: 135px;
+        position: relative; }
+        #header #sidebar-nav .mods .middle_items .reserve .car #collectBox {
+          display: block;
+          height: 135px;
+          padding-top: 5px;
+          color: #fff;
+          line-height: 18px;
+          width: 35px;
+          text-align: center; }
+          #header #sidebar-nav .mods .middle_items .reserve .car #collectBox i {
+            display: block;
+            width: 35px;
+            height: 35px;
+            background: url(../images/site_bar.png) no-repeat 0 -39px; }
+          #header #sidebar-nav .mods .middle_items .reserve .car #collectBox span {
+            display: block;
+            margin-top: 7px; }
+        #header #sidebar-nav .mods .middle_items .reserve .shopcar {
+          position: absolute;
+          width: 300px;
+          left: -300px;
+          top: 0;
+          min-height: 100px;
+          background: #fff;
+          box-shadow: 0 0 5px #ccc;
+          display: none; }
+      #header #sidebar-nav .mods .middle_items .follow a {
+        display: block;
+        width: 35px;
+        height: 45px;
+        color: #fff; }
+        #header #sidebar-nav .mods .middle_items .follow a .survey i {
+          margin: 0 auto;
+          display: block;
+          margin-bottom: 6px;
+          width: 24px;
+          height: 24px;
+          background: url(../images/site_bar.png) no-repeat -6px -74px; }
+        #header #sidebar-nav .mods .middle_items .follow a .survey b {
+          display: block;
+          text-align: center; }
+        #header #sidebar-nav .mods .middle_items .follow a .online {
+          width: 35px;
+          height: 45px;
+          position: absolute;
+          top: 0;
+          background: #E22A40;
+          color: #fff;
+          text-align: center;
+          line-height: 18px;
+          display: none; }
+          #header #sidebar-nav .mods .middle_items .follow a .online .p1 {
+            margin-top: 3px; }
+      #header #sidebar-nav .mods .middle_items .collect a {
+        display: block;
+        width: 35px;
+        height: 45px;
+        color: #fff; }
+        #header #sidebar-nav .mods .middle_items .collect a .survey i {
+          margin: 0 auto;
+          display: block;
+          margin-bottom: 6px;
+          width: 24px;
+          height: 24px;
+          background: url(../images/site_bar.png) no-repeat -6px -109px; }
+        #header #sidebar-nav .mods .middle_items .collect a .survey b {
+          display: block;
+          text-align: center; }
+        #header #sidebar-nav .mods .middle_items .collect a .online {
+          width: 35px;
+          height: 45px;
+          position: absolute;
+          top: 0;
+          background: #E22A40;
+          color: #fff;
+          text-align: center;
+          line-height: 18px;
+          display: none; }
+          #header #sidebar-nav .mods .middle_items .collect a .online .p1 {
+            margin-top: 3px; }
+      #header #sidebar-nav .mods .middle_items .code {
+        position: relative; }
+        #header #sidebar-nav .mods .middle_items .code a .survey i {
+          display: block;
+          width: 24px;
+          height: 24px;
+          margin: 0 auto;
+          background: url(../images/site_bar.png) no-repeat -6px -144px; }
+        #header #sidebar-nav .mods .middle_items .code a .online {
+          width: 35px;
+          height: 45px;
+          position: absolute;
+          top: 0;
+          left: 0;
+          text-align: center;
+          background: #E12545;
+          color: #fff;
+          line-height: 18px;
+          display: none; }
+          #header #sidebar-nav .mods .middle_items .code a .online .p1 {
+            margin-top: 5px; }
+      #header #sidebar-nav .mods .middle_items .topen {
+        position: relative;
+        display: none; }
+        #header #sidebar-nav .mods .middle_items .topen a .survey i {
+          display: block;
+          width: 24px;
+          height: 24px;
+          margin: 0 auto;
+          background: url(../images/site_bar.png) no-repeat -6px -179px; }
+        #header #sidebar-nav .mods .middle_items .topen a .online {
+          width: 35px;
+          height: 45px;
+          position: absolute;
+          top: 0;
+          left: 0;
+          text-align: center;
+          background: #E12545;
+          color: #fff;
+          line-height: 18px;
+          display: none; }
+          #header #sidebar-nav .mods .middle_items .topen a .online .p1 {
+            margin-top: 5px; }
 
 #footer {
   margin-top: 20px;

@@ -1,0 +1,446 @@
+#main {
+  width: 1210px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+  font-family: "microsoft yahei"; }
+  #main .breadcrumb {
+    height: 40px;
+    line-height: 40px; }
+    #main .breadcrumb i {
+      vertical-align: middle;
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      background: url(../images/user_header.png) no-repeat -427px -208px; }
+  #main #suit {
+    width: 100%;
+    height: 510px; }
+    #main #suit .suit_img {
+      float: left;
+      width: 400px; }
+      #main #suit .suit_img .box {
+        width: 380px;
+        height: 380px;
+        padding: 10px;
+        border: 1px solid #ddd;
+        position: relative;
+        cursor: pointer; }
+        #main #suit .suit_img .box .small {
+          position: relative;
+          cursor: move; }
+          #main #suit .suit_img .box .small img {
+            display: block;
+            width: 378px;
+            height: 378px;
+            position: absolute;
+            z-index: 1; }
+          #main #suit .suit_img .box .small .img1 {
+            z-index: 10; }
+          #main #suit .suit_img .box .small #mask {
+            position: absolute;
+            width: 110px;
+            height: 110px;
+            background: rgba(255, 255, 255, 0.4);
+            border: 1px solid #E7E7E7;
+            top: 60px;
+            z-index: 11;
+            display: none; }
+        #main #suit .suit_img .box .big {
+          position: absolute;
+          left: 400px;
+          top: 12px;
+          width: 580px;
+          height: 376px;
+          overflow: hidden;
+          display: none; }
+          #main #suit .suit_img .box .big img {
+            display: block;
+            position: absolute;
+            z-index: 1; }
+          #main #suit .suit_img .box .big .img1 {
+            z-index: 10; }
+          #main #suit .suit_img .box .big .bigImg {
+            position: absolute;
+            left: 0;
+            top: 0; }
+      #main #suit .suit_img .img_list {
+        margin: 10px 0; }
+        #main #suit .suit_img .img_list span {
+          display: inline-block;
+          width: 16px;
+          height: 50px;
+          cursor: pointer; }
+        #main #suit .suit_img .img_list #btn_l {
+          float: left;
+          margin-left: 0;
+          background: url(../images/btn_per.gif) no-repeat; }
+        #main #suit .suit_img .img_list #btn_r {
+          float: right;
+          background: url(../images/btn_next.gif) no-repeat; }
+        #main #suit .suit_img .img_list ul {
+          float: left;
+          height: 52px;
+          margin-left: 10px; }
+          #main #suit .suit_img .img_list ul li {
+            float: left;
+            margin-right: 10px;
+            cursor: pointer; }
+            #main #suit .suit_img .img_list ul li img {
+              display: block;
+              width: 50px;
+              height: 50px;
+              border: 1px solid #ddd; }
+      #main #suit .suit_img .share {
+        margin-top: 15px; }
+        #main #suit .suit_img .share .bigg {
+          float: left;
+          width: 86px;
+          height: 24px;
+          line-height: 25px;
+          background: #e7e7e7;
+          border: 1px solid #ccc;
+          border-radius: 2px; }
+        #main #suit .suit_img .share a {
+          display: block;
+          float: left;
+          margin-left: 20px; }
+        #main #suit .suit_img .share .ratio {
+          float: left;
+          width: 58px;
+          height: 21px;
+          margin-left: 66px; }
+          #main #suit .suit_img .share .ratio b {
+            display: block;
+            width: 58px;
+            height: 21px;
+            background: url(../images/common1.png) no-repeat 0 -75px; }
+    #main #suit .suit_info {
+      float: left;
+      width: 808px;
+      height: 510px;
+      position: relative; }
+      #main #suit .suit_info .detail {
+        width: 560px;
+        padding: 0 12px 0 25px; }
+        #main #suit .suit_info .detail h3 {
+          width: 550px;
+          height: 40px;
+          font-size: 18px;
+          font-weight: 300;
+          line-height: 40px; }
+        #main #suit .suit_info .detail .price {
+          background: #FAFAFA;
+          margin: 10px 0;
+          padding: 6px 15px; }
+          #main #suit .suit_info .detail .price p {
+            height: 35px; }
+          #main #suit .suit_info .detail .price .p1 i {
+            vertical-align: bottom; }
+          #main #suit .suit_info .detail .price .p1 b {
+            font-size: 22px;
+            color: #E12545;
+            padding: 0 10px; }
+          #main #suit .suit_info .detail .price .p1 span {
+            display: inline-block;
+            width: 60px;
+            height: 20px;
+            background: #E12545;
+            border-radius: 2px;
+            color: #fff;
+            text-align: center;
+            line-height: 20px;
+            margin-left: 60px; }
+          #main #suit .suit_info .detail .price .p2 s {
+            text-decoration: line-through;
+            padding: 0 20px;
+            color: #999;
+            line-height: 35px; }
+          #main #suit .suit_info .detail .price .p2 span {
+            margin-left: 15px; }
+        #main #suit .suit_info .detail .add-time {
+          height: 30px;
+          margin: 10px 2px; }
+          #main #suit .suit_info .detail .add-time li {
+            float: left;
+            height: 30px;
+            line-height: 30px; }
+            #main #suit .suit_info .detail .add-time li:nth-child(2) {
+              margin-left: 88px; }
+            #main #suit .suit_info .detail .add-time li i {
+              color: #999;
+              margin-right: 15px; }
+        #main #suit .suit_info .detail .valuation {
+          margin: 10px 0;
+          height: 45px;
+          border-top: 1px dashed #ddd;
+          border-bottom: 1px dashed #ddd; }
+          #main #suit .suit_info .detail .valuation li {
+            float: left;
+            width: 33%;
+            text-align: center;
+            height: 25px;
+            line-height: 25px;
+            border-right: 1px solid #ddd;
+            margin-top: 10px; }
+            #main #suit .suit_info .detail .valuation li:last-child {
+              border: none; }
+            #main #suit .suit_info .detail .valuation li i {
+              color: #999; }
+            #main #suit .suit_info .detail .valuation li b {
+              padding-left: 6px;
+              color: #E12545; }
+        #main #suit .suit_info .detail .choose i {
+          color: #999; }
+        #main #suit .suit_info .detail .choose .pickup {
+          height: 35px;
+          line-height: 35px;
+          padding: 0 0 7px 0; }
+          #main #suit .suit_info .detail .choose .pickup i {
+            float: left;
+            color: #999; }
+          #main #suit .suit_info .detail .choose .pickup .will {
+            float: left;
+            margin-left: 15px;
+            width: 82px;
+            height: 30px;
+            border: 1px solid #ccc;
+            line-height: 30px;
+            text-align: center;
+            border-right: none; }
+          #main #suit .suit_info .detail .choose .pickup .city {
+            float: left;
+            width: 90px;
+            height: 30px;
+            border: 1px solid #ccc;
+            line-height: 30px;
+            text-align: center; }
+        #main #suit .suit_info .detail .choose .li2 {
+          margin-top: 10px; }
+          #main #suit .suit_info .detail .choose .li2 i {
+            float: left; }
+          #main #suit .suit_info .detail .choose .li2 .box1 {
+            float: left;
+            width: 106px;
+            height: 50px;
+            border: 1px solid #ddd;
+            margin-left: 15px;
+            cursor: pointer; }
+            #main #suit .suit_info .detail .choose .li2 .box1 b {
+              display: inline-block;
+              vertical-align: middle;
+              margin-top: 6px;
+              padding: 0 8px; }
+              #main #suit .suit_info .detail .choose .li2 .box1 b img {
+                display: block;
+                width: 40px;
+                height: 40px; }
+            #main #suit .suit_info .detail .choose .li2 .box1 span {
+              vertical-align: middle;
+              display: inline-block;
+              width: 24px;
+              height: 40px;
+              line-height: 40px;
+              margin-top: 6px;
+              padding: 0 8px; }
+        #main #suit .suit_info .detail .choose .li3 {
+          margin-top: 18px; }
+          #main #suit .suit_info .detail .choose .li3 a {
+            display: inline-block;
+            height: 35px;
+            padding: 0 15px;
+            line-height: 35px;
+            text-align: center;
+            border: 1px solid #ddd; }
+          #main #suit .suit_info .detail .choose .li3 .a1 {
+            margin-left: 12px; }
+        #main #suit .suit_info .detail .choose .li4 {
+          margin-top: 18px; }
+          #main #suit .suit_info .detail .choose .li4 a {
+            display: inline-block;
+            width: 15px;
+            height: 15px;
+            line-height: 15px;
+            text-align: center;
+            border: 1px solid #ddd; }
+          #main #suit .suit_info .detail .choose .li4 .a1 {
+            margin-left: 12px; }
+          #main #suit .suit_info .detail .choose .li4 input {
+            width: 36px;
+            height: 22px;
+            line-height: 2px;
+            text-align: center;
+            border: none;
+            border: 1px solid #ddd;
+            outline: none; }
+          #main #suit .suit_info .detail .choose .li4 span {
+            color: #999; }
+        #main #suit .suit_info .detail .buy {
+          margin-top: 15px; }
+          #main #suit .suit_info .detail .buy a {
+            display: inline-block;
+            height: 36px;
+            border: 1px solid #ddd;
+            line-height: 36px;
+            text-align: center;
+            padding: 0 10px;
+            margin-right: 8px; }
+            #main #suit .suit_info .detail .buy a:nth-child(1) {
+              background: #F56A00; }
+            #main #suit .suit_info .detail .buy a:nth-child(2) {
+              background: #F52648; }
+          #main #suit .suit_info .detail .buy .main-wrap {
+            width: 135px;
+            color: #fff;
+            border: none;
+            padding: 0; }
+      #main #suit .suit_info .info {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 210px;
+        height: 550px;
+        background: #f9f9f9; }
+        #main #suit .suit_info .info .bar_pop {
+          height: 550px;
+          min-height: 510px;
+          padding: 0 10px 0;
+          border: 1px solid #ddd; }
+          #main #suit .suit_info .info .bar_pop .seller {
+            height: 26px;
+            line-height: 26px;
+            text-align: center;
+            font-size: 14px;
+            color: #666;
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd; }
+          #main #suit .suit_info .info .bar_pop .line {
+            height: 35px;
+            line-height: 35px; }
+            #main #suit .suit_info .info .bar_pop .line i {
+              color: #999;
+              vertical-align: middle; }
+            #main #suit .suit_info .info .bar_pop .line span {
+              vertical-align: middle;
+              display: inline-block;
+              width: 124px;
+              height: 22px;
+              margin-left: 10px;
+              background: url(../images/red_line.png) no-repeat; }
+          #main #suit .suit_info .info .bar_pop .server {
+            border-top: 1px dashed #ddd;
+            border-bottom: 1px dashed #ddd;
+            margin-top: 6px; }
+            #main #suit .suit_info .info .bar_pop .server li {
+              float: left;
+              border-right: 1px dashed #ddd;
+              margin: 6px 0; }
+              #main #suit .suit_info .info .bar_pop .server li span {
+                display: block;
+                width: 61px;
+                height: 18px;
+                text-align: center;
+                line-height: 18px; }
+              #main #suit .suit_info .info .bar_pop .server li b {
+                display: block;
+                width: 61px;
+                height: 18px;
+                color: #E12545;
+                text-align: center;
+                line-height: 18px; }
+              #main #suit .suit_info .info .bar_pop .server li:last-child {
+                border: none; }
+          #main #suit .suit_info .info .bar_pop .store {
+            height: 26px;
+            line-height: 26px;
+            margin: 8px 0; }
+            #main #suit .suit_info .info .bar_pop .store span {
+              margin-left: 10px; }
+          #main #suit .suit_info .info .bar_pop .enter_shop {
+            border-top: 1px dashed #ddd; }
+            #main #suit .suit_info .info .bar_pop .enter_shop .shop-t {
+              margin-top: 15px; }
+              #main #suit .suit_info .info .bar_pop .enter_shop .shop-t a {
+                display: inline-block;
+                color: #f52648;
+                height: 31px;
+                line-height: 31px;
+                border: 1px solid #f52648;
+                padding: 0 10px 0 26px;
+                margin-right: 6px;
+                background: url(../images/ghs.png) no-repeat; }
+              #main #suit .suit_info .info .bar_pop .enter_shop .shop-t .join {
+                background-position: -146px 7px; }
+              #main #suit .suit_info .info .bar_pop .enter_shop .shop-t .with {
+                background-position: -151px -274px; }
+            #main #suit .suit_info .info .bar_pop .enter_shop .shop-b {
+              text-align: center;
+              margin: 10px 0; }
+              #main #suit .suit_info .info .bar_pop .enter_shop .shop-b p {
+                margin: 0 auto;
+                margin-top: 2px;
+                width: 120px; }
+                #main #suit .suit_info .info .bar_pop .enter_shop .shop-b p img {
+                  display: block;
+                  width: 120px;
+                  height: 120px; }
+  #main .groom {
+    position: relative;
+    margin-top: 35px; }
+    #main .groom .elab {
+      width: 152px;
+      height: 42px;
+      line-height: 42px;
+      text-align: center;
+      font-weight: 300;
+      border-top: 2px solid #F52648;
+      border-left: 1px solid #ddd;
+      border-right: 1px solid #ddd;
+      position: relative; }
+      #main .groom .elab b {
+        display: inline-block;
+        width: 152px;
+        height: 2px;
+        background: #fff;
+        left: 0;
+        position: absolute;
+        top: 42px; }
+    #main .groom .nominate {
+      border: 1px solid #ddd;
+      height: 210px; }
+      #main .groom .nominate #elab_l {
+        float: left;
+        width: 50px;
+        height: 60px;
+        padding-top: 90px;
+        text-align: center;
+        cursor: pointer; }
+      #main .groom .nominate #elab_r {
+        float: right;
+        width: 50px;
+        height: 60px;
+        padding-top: 90px;
+        text-align: center;
+        cursor: pointer; }
+      #main .groom .nominate .box2 {
+        float: left;
+        width: 1108px;
+        height: 160px;
+        padding: 25px 0;
+        position: relative;
+        overflow: hidden; }
+        #main .groom .nominate .box2 .list_elab {
+          height: 160px;
+          position: absolute;
+          width: 2060px;
+          left: 0; }
+          #main .groom .nominate .box2 .list_elab li {
+            float: left;
+            margin-right: 29px; }
+            #main .groom .nominate .box2 .list_elab li a img {
+              display: block;
+              width: 160px;
+              height: 160px; }
+            #main .groom .nominate .box2 .list_elab li:nth-child(6n) {
+              margin-right: 0; }
+
+/*# sourceMappingURL=details.css.map */

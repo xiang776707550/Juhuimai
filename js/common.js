@@ -87,7 +87,7 @@ $(function(){
 			$(this).find(".mum").css("border-bottom","")
 		})
 		
-		$.ajax({
+		/*$.ajax({
 		type:"get",
 		url:"http://127.0.0.1/Juhuimai/data/common.json",
 		success:function(res){
@@ -112,14 +112,232 @@ $(function(){
 		}
 		
 
+		});*/
+		$.ajax({
+		type:"get",
+		url:"http://127.0.0.1/Juhuimai/data/common.json",
+		success:function(res){
+			console.log(res)
+			var html = "";
+			var html1 = "";
+			for(var i in res){
+				console.log(res[i].subNavList[0].subNavTit)
+				var nav = res[i].subNavList[0];
+				html = `
+								<div class="showL">
+									<div class="list1 clear">
+										<div class="cat">
+											<a href="#">保健食品:</a>
+										</div>
+										<div class="list">
+											
+										</div>
+									</div>
+									<div class="list1 clear">
+										<div class="cat">
+											<a href="#">保健食品:</a>
+										</div>
+										<div class="list">
+											<a href="#">苹果</a>
+											<a href="#">苹果</a>
+											<a href="#">苹果</a>
+											<a href="#">苹果</a>
+											<a href="#">苹果</a>
+											<a href="#">苹果</a>
+											<a href="#">苹果</a>
+											<a href="#">苹果</a>
+											
+										</div>
+									</div>
+									<div class="list1 clear">
+										<div class="cat">
+											<a href="#">保健食品:</a>
+										</div>
+										<div class="list">
+											<a href="#">苹果</a>
+											<a href="#">苹果</a>
+											<a href="#">苹果</a>
+											<a href="#">苹果</a>
+											<a href="#">苹果</a>
+											<a href="#">苹果</a>
+											<a href="#">苹果</a>
+											<a href="#">苹果</a>
+										</div>
+									</div>
+									<div class="list1 clear">
+										<div class="cat">
+											<a href="#">保健食品:</a>
+										</div>
+										<div class="list">
+											<a href="#">苹果</a>
+											<a href="#">苹果</a>
+											<a href="#">苹果</a>
+											<a href="#">苹果</a>
+											<a href="#">苹果</a>
+											<a href="#">苹果</a>
+											<a href="#">苹果</a>
+											<a href="#">苹果</a>
+										</div>
+									</div>
+									<div class="list1 clear">
+										<div class="cat">
+											<a href="#">保健食品:</a>
+										</div>
+										<div class="list">
+											<a href="#">苹果</a>
+											<a href="#">苹果</a>
+											<a href="#">苹果</a>
+											<a href="#">苹果</a>
+											<a href="#">苹果</a>
+											<a href="#">苹果</a>
+											<a href="#">苹果</a>
+											<a href="#">苹果</a>
+										</div>
+									</div>
+									<div class="list1 clear">
+										<div class="cat">
+											<a href="#">保健食品:</a>
+										</div>
+										<div class="list">
+											<a href="#">苹果</a>
+											<a href="#">苹果</a>
+											<a href="#">苹果</a>
+											<a href="#">苹果</a>
+											<a href="#">苹果</a>
+											<a href="#">苹果</a>
+											<a href="#">苹果</a>
+											<a href="#">苹果</a>
+										</div>
+									</div>
+								</div>
+								<div class="showR">
+									<h3 class="groom">推荐品牌</h3>
+									<ul class="store clear">
+										<li><a href="#">三只松鼠</a></li>
+										<li><a href="#">三只松鼠</a></li>
+										<li><a href="#">三只松鼠</a></li>
+										<li><a href="#">三只松鼠</a></li>
+										<li><a href="#">三只松鼠</a></li>
+										<li><a href="#">三只松鼠</a></li>
+										<li><a href="#">三只松鼠</a></li>
+										<li><a href="#">三只松鼠</a></li>
+										<li><a href="#">三只松鼠</a></li>
+									</ul>
+								</div>`
+				
+			}
+			$("#showList").html(html);
+		}
+		
+
 		});
+		
+		
 		
 		$(".searchT li").click(function(){
 			$(this).find("a").addClass("act").end().siblings().find("a").removeClass("act");
 		})
 		
-		$("#carList").show();
-		$("#showList").hide();
+		$("#carList").hide();
+		$("#showList").show();
+		
+		
+		
+		
+		
+		
+		$(".list a").hover(function(){
+			$("#carList").show();
+		},function(){
+			
+		})
+		$("#carList").hover(function(){
+			$(this).show();
+		},function(){
+			$(this).hide();
+		})
+		
+		$(".turn").hover(function(){
+			$(this).find(".survey").stop().animate({"height":0,"top":22},300,function(){
+				$(this).hide();
+				
+				$(this).next().show().stop().animate({"height":45,"top":0},300)
+			});
+		},function(){
+			$(this).find(".online").stop().animate({"height":0,"top":22},300,function(){
+				$(this).hide();
+				
+				$(this).prev().show().stop().animate({"height":45,"top":0},300)
+			})
+		})
+		
+		$(".reserve").hover(function(){
+			$(this).css("background","#E12545");
+		},function(){
+			$(this).css("background","");
+		})
+		
+		var arr = getCookie("shoplist");
+		console.log(arr);
+		var count = "";
+		for(var i in arr){
+			var shopinfo = arr[i];
+//			console.log(parseInt(`${shopinfo.count}`))
+			count = parseInt(`${arr[0].count}`)+parseInt(`${arr[i].count}`)
+		}
+		$("#numm").html(count);
+		
+		$(window).scroll(function(){
+			var Top = $(window).scrollTop();
+			if(Top>200){
+				$(".topen").fadeIn(100);
+			}else{
+				$(".topen").fadeOut(100);
+			}
+			$(".topen").click(function(){
+				$("body,html").stop().animate({"scrollTop":0},1000);
+			})
+		})
+		
+		
+		
+	//search
+	$(".ts_txt").focus(function(){
+		$(".ts_txt")[0].value = "";
+		$("#list").css("display","block");
+//		alert("aa");
+	});
+	$(".ts_txt").blur(function(){
+		$(".ts_txt")[0].value = "宽松显瘦纯色短裤";
+		$("#list").css("display","none");
+	});
+	
+	//搜索库
+	var oInput = document.getElementsByClassName("ts_txt")[0];
+	var oList = document.getElementById("list");
+	
+	oInput.oninput=function(){
+
+		var val = $(this).val();
+		$.getJSON("http://list.mogujie.com/module/mget?code=tips&keyWord="+val+"&callback=?",function(data){
+			console.log(data);
+			console.log(data.data.tips.data);
+			data = data.data.tips.data;
+			var html = "";
+	//		console.log(data[0].query);
+			for(var i in data){
+				html += "<li><a href=''>"+data[i].query+"</a></li>";
+			}
+			oList.innerHTML = html;
+		})
+			
+	}
+		
+	
+
+	
+	
+	
 		
 	});
 	$("#footer-warp").load("http://127.0.0.1/Juhuimai/common.html #footer");
