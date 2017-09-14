@@ -1,5 +1,5 @@
 $(function(){
-	$("#header-warp").load("Juhuimai/common.html #header",function(){
+	$("#header-warp").load("common.html #header",function(){
 		$(".nav-r #me").hover(function(){
 			$(".info").fadeIn(10);
 			$(".info").css("border-top-color","#fff");
@@ -91,7 +91,7 @@ $(function(){
 		
 		$.ajax({
 		type:"get",
-		url:"http://127.0.0.1/Juhuimai/data/common.json",
+		url:"data/common.json",
 		success:function(res){
 			console.log(res)
 			var html = "";
