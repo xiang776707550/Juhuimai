@@ -436,7 +436,7 @@ $(function(){
 			for(var i=0;i<8;i++){
 				html +=`<li>
 							<div class="clear admin">
-									<a href="details.html" class="clear">
+									<a href="list.html" class="clear">
 										<img src="images/${res[i].img}">
 										<p>${res[i].title}</p>
 									</a>
@@ -455,7 +455,7 @@ $(function(){
 			for(var i=8;i<16;i++){
 				html2 +=`<li>
 							<div class="clear admin">
-									<a href="details.html" class="clear">
+									<a href="list.html" class="clear">
 										<img src="images/${res[i].img}">
 										<p>${res[i].title}</p>
 									</a>
@@ -474,7 +474,7 @@ $(function(){
 			for(var i=16;i<24;i++){
 				html3 +=`<li>
 							<div class="clear admin">
-									<a href="details.html" class="clear">
+									<a href="list.html" class="clear">
 										<img src="images/${res[i].img}">
 										<p>${res[i].title}</p>
 									</a>
@@ -493,7 +493,7 @@ $(function(){
 			for(var i=24;i<32;i++){
 				html4 +=`<li>
 							<div class="clear admin">
-									<a href="details.html" class="clear">
+									<a href="list.html" class="clear">
 										<img src="images/${res[i].img}">
 										<p>${res[i].title}</p>
 									</a>
