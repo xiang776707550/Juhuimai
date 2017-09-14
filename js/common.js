@@ -1,6 +1,6 @@
 $(function(){
 
-	$("#header-warp").load("http://127.0.0.1/Juhuimai/common.html #header",function(){
+	$("#header-warp").load("Juhuimai/common.html #header",function(){
 		$(".nav-r #me").hover(function(){
 			$(".info").fadeIn(10);
 			$(".info").css("border-top-color","#fff");
@@ -340,7 +340,7 @@ $(function(){
 	
 		
 	});
-	$("#footer-warp").load("http://127.0.0.1/Juhuimai/common.html #footer");
+	$("#footer-warp").load("Juhuimai/common.html #footer");
 	
 	
 	
