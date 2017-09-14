@@ -115,7 +115,7 @@ $(function(){
 		});*/
 		$.ajax({
 		type:"get",
-		url:"http://127.0.0.1/Juhuimai/data/common.json",
+		url:"data/common.json",
 		success:function(res){
 			console.log(res)
 			var html = "";
@@ -313,7 +313,7 @@ $(function(){
 	});
 	
 	//搜索库
-	var oInput = document.getElementsByClassName("ts_txt")[0];
+	var oInput = document.getElementById("search");
 	var oList = document.getElementById("list");
 	
 	oInput.oninput=function(){
